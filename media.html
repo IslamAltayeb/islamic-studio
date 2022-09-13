@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girls Music Band</title>
+
+  <!-- title icon -->
+  <link rel="shortcut icon" href="img/logo.png" />
+
+  <!-- render all elements normaly -->
+  <link rel="stylesheet" href="css/normaliz.css" />
+  <!-- normal css file -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- media css file -->
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="stylesheet" href="css/music.css">
+  <!-- font aswsome  -->
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <!-- bootstrap import -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- bootstrap import -->
+
+
+</head>
+
+<body onload="myloading()">
+
+  <!-- start loading section -->
+  <div id="loading"></div>
+  <!-- end loading section -->
+
+  <!-- start header -->
+  <div class="header-media" id="header">
+    <div class="container">
+      <a href="index.html"><i class="fas fa-microphone-alt"></i></a>
+      <div class="links" id="menu">
+        <span class="icon" id="icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <strong>Menu</strong>
+        </span>
+
+        <ul id="list" class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="media.html">MEDIA</a></li>
+          <li><a href="index.html#about">ABOUT</a></li>
+          <li><a href="book.html">BOOK NOW</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav">
+      <a href="#listen">LISTEN</a>
+      <a href="#videos">Videos</a>
+      <a href="#gallery">Gallery</a>
+
+    </div>
+  </div>
+
+  <!-- end header -->
+
+  <!-- start sticky social icon -->
+  <div class="sticky-icon">
+    <a href="https://www.youtube.com/channel/UC_GnoHo-wNLNnx_0cG2l2bA"
+      target="https://www.youtube.com/channel/UC_GnoHo-wNLNnx_0cG2l2bA" class="Youtube"
+      style="text-decoration: none;"><i class="fab fa-youtube"></i> Youtube </a>
+
+    <a href="https://www.facebook.com/profile.php?id=100057052042152"
+      target="https://www.facebook.com/profile.php?id=100057052042152" class="Facebook"
+      style="text-decoration: none;"><i class="fab fa-facebook-f"> </i> Facebook </a>
+
+    <a href="https://www.instagram.com/alaa._abdo99/" target="https://www.instagram.com/alaa._abdo99/" class="Instagram"
+      style="text-decoration: none;"><i class="fab fa-instagram"></i> Instagram </a>
+
+    <a href="https://api.whatsapp.com/send/?phone=905013269451&text&app_absent=0"
+      target="https://api.whatsapp.com/send/?phone=905013269451&text&app_absent=0" class="Whatsapp"
+      style="text-decoration: none;"><i class="fab fa-whatsapp"></i> Wahtsapp </a>
+
+    <a href="mailto:alaa28762@gmail.com?subject=contact" class="Email" style="text-decoration: none;"><i
+        class="far fa-envelope-open"></i> </i> Gmail </a>
+
+  </div>
+
+  <!-- end sticky social icon -->
+
+  <!-- start listen section -->
+  <div class="player" id="listen">
+    <h2 class="special-heading-media"> LISTEN</h2>
+    <div class="player__header">
+
+      <div class="player__img player__img--absolute slider">
+
+        <button class="player__button player__button--absolute--nw playlist">
+
+          <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+
+        </button>
+
+        <button class="player__button player__button--absolute--center play">
+
+          <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
+          <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
+
+        </button>
+
+        <div class="slider__content">
+
+          <img class="img slider__img" src="songs/main.jpg" alt="cover">
+          <img class="img slider__img" src="songs/hamel.jpg" alt="cover">
+          <img class="img slider__img" src="songs/mama.jpg" alt="cover">
+          <img class="img slider__img" src="songs/salah.jpg" alt="cover">
+          <img class="img slider__img" src="songs/come.jpg" alt="cover">
+          <img class="img slider__img" src="songs/allah.jpg" alt="cover">
+          <img class="img slider__img" src="songs/medily.jpg" alt="cover">
+
+        </div>
+
+      </div>
+
+      <div class="player__controls">
+
+        <button class="player__button back">
+
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon">
+
+        </button>
+
+        <p class="player__context slider__context">
+
+          <strong class="slider__name"></strong>
+          <span class="player__title slider__title"></span>
+
+        </p>
+
+        <button class="player__button next">
+
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon">
+
+        </button>
+
+        <div class="progres">
+
+          <div class="progres__filled"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <ul class="player__playlist list">
+
+      <li class="player__song">
+
+        <img class="player__img img" src="songs/main.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">track</b>
+          <span class="flex">
+
+            <span class="player__title">bel nour</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="songs/nour.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="songs/hamel.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">motivation</b>
+          <span class="flex">
+
+            <span class="player__title">hamel alquran</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="songs/hamel.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="songs/mama.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">mother</b>
+          <span class="flex">
+
+            <span class="player__title">nour elbit</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="songs/mama.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="songs/salah.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">salat al nabi</b>
+          <span class="flex">
+
+            <span class="player__title">allahum salli</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="songs/salah.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="songs/come.jpg" alt="cover">
+
+        <p class="player__context ">
+
+          <b class="player__song-name">morning</b>
+          <span class="flex">
+
+            <span class="player__title">sabahly</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="songs/come.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="songs/allah.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">allah</b>
+          <span class="flex">
+
+            <span class="player__title">molana</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="songs/allah.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="songs/medily.jpg" alt="cover">
+
+        <p class="player__context ">
+
+          <b class="player__song-name">medley </b>
+          <span class="flex">
+
+            <span class="player__title">eid</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="songs/medly.mp3"></audio>
+
+      </li>
+
+    </ul>
+
+  </div>
+  <!-- end listen section -->
+
+  <!-- start video section -->
+  <!-- second slider -->
+
+  <div class="col-lg-4" id="videos">
+    <h2 class="special-heading-media"> VIDEOS</h2>
+    <div class="carousel">
+      <div><iframe src="//www.youtube.com/embed/qF_bioGhRgY?auto-play=true" allowfullscreen frameborder="0"
+          name="slider1"></iframe>
+      </div>
+      <span>
+        <a href="//www.youtube.com/embed/qF_bioGhRgY" target="slider1"><img src="img/ghaly.webp"></a>
+        <a href="//www.youtube.com/embed/IEgnoqYHlbs" target="slider1"><img src="img/medely.webp"></a>
+        <a href="//www.youtube.com/embed/4FFB6kpK88Q" target="slider1"><img src="img/sabbah.webp"></a>
+        <a href="//www.youtube.com/embed/_yP9fmiSXsQ" target="slider1"><img src="img/allah.webp"></a>
+      </span>
+    </div>
+  </div>
+
+  <!-- end video section -->
+
+  <!-- strat Gallery section -->
+  <div class="slideshow-container" id="gallery">
+    <h2 class="special-heading-media"> Gallery</h2>
+
+    <div class="mySlides fade">
+      <img src="img/1.jpg">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/2.jpg">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/3.jpg">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/4.jpg">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/5.jpg">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/6.jpg">
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+  <!-- end Gallery section -->
+
+  <!-- start alaa anmiation -->
+  <div class="anmi">
+    <video autoplay playsinline muted loop preload
+      src="vid/Amazing Eid Operetta with all languages(1080P_HD) (online-video-cutter.com).mp4">
+
+    </video>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <mask id="mask" x="0" y="0" width="100%" height="100%">
+          <rect x="0" y="0" width="100%" height="100%" />
+          <text x="85" y="60">alaa</text>
+        </mask>
+      </defs>
+      <rect x="0" y="0" width="100%" height="100%" />
+    </svg>
+  </div>
+  <!-- end alaa anmiation -->
+
+
+  <!--start footer section -->
+  <footer>
+    <p>&copy; 2022 by Alaa Islamic Band.</p>
+    <p> Proudly created with Islam Altayeb</p>
+  </footer>
+  <!--end footer section -->
+
+  <!-- go to top button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&and;</button>
+  <!--end go to top button -->
+
+
+  <!-- general js file -->
+  <script src="js/script.js"></script>
+
+  <!-- media js file -->
+  <script src="js/media.js"></script>
+
+  <!-- start loading section -->
+  <script>
+
+    var preloader = document.getElementById("loading");
+
+    function myloading() {
+      preloader.style.display = "none";
+    }
+  </script>
+
+  <!-- end loading section -->
+</body>
+
+</html>

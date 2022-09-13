@@ -1,0 +1,441 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }  
+
+  /* color var */
+  :root {
+    --main-color: #00abcc;
+    --secondary-color: #d42e29;
+  }
+
+  .container {
+    padding-left: 15p;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* midum */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  .special-heading-media {
+    color: var(--main-color);
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -3px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  @media (max-width: 767px) {
+    .special-heading-media {
+      font-size: 20pt;
+      letter-spacing: 0;      
+    }
+  }
+
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* start loading section */
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url(../img/Radio-0.5s-200px.gif) no-repeat center;
+  z-index: 99999;
+}
+/* end loading section */
+
+  /* start headers */
+  .header-media {
+    /* padding: 20px; */
+    background-image: url(../img/3235.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    height: 250px;
+    border-radius: 0px 0px 300px 0px;
+    filter: brightness(90%);
+    
+  }
+
+  .header-media .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .header-media .container .fa-microphone-alt {
+    font-size: 30pt;
+    text-align: center;
+    color: #00abcc;
+    background-color: white;
+    border-radius: 15px 0;
+    padding: 10px;
+    width: 60px;
+    animation: colors 3s infinite;
+    animation-delay: 1s;
+    position: relative;
+  }
+
+  @keyframes colors {
+    0% {
+      background-color: var(--main-color);
+      color: white;
+    }
+
+    100% {
+      background-color: var(--secondary-color);
+      color: white;
+    }
+  }
+
+  .header-media .links {
+    position: relative;
+  }
+
+  .header-media .links .icon {
+    width: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px 0 15px 0;
+    cursor: pointer;
+  }
+
+  .header-media .links .icon:hover {
+    background-color: var(--secondary-color);
+  }
+  .header-media .links .icon span {
+    background-color: var(--main-color);
+    margin-bottom: 5px;
+    height: 2px;
+  }
+
+  .header-media .links .icon:hover span {
+    background-color: white;
+  }
+  .header-media .links .icon span:first-child {
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .header-media .links:hover .icon span:first-child {
+    width: 50%;
+  }
+
+  .header-media .links .icon span:nth-child(2) {
+    width: 100%;
+    transition: 1s;
+  }
+
+  .header-media .links .icon span:nth-child(3) {
+    width: 100%;
+  }
+
+  .header-media .links .icon span:nth-child(4) {
+    width: 50%;
+    transition: 1s;
+  }
+
+  .header-media .links:hover .icon span:nth-child(4) {
+    width: 100%;
+  }
+
+  .header-media .links .icon strong {
+    color: var(--main-color);
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+  .header-media .links .icon:hover strong {
+    color: white;
+  }
+
+  .header-media .links ul {
+    list-style: none;
+    margin: 0;
+    right: 0;
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    display: none;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    border-radius: 25px 0;
+    z-index: 1;
+  }
+
+  @media (max-width: 767px) {
+    .header-media .links ul {
+      width: 300px;
+    }
+  }
+
+  .header-media .links ul::before {
+    content: "";
+    border: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+  }
+
+  .header-media .links:hover ul {
+    /* display: block; */
+    z-index: 1;
+  }
+
+  .header-media .links ul li a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    color: var(--main-color);
+    transition: 0.3s;
+  }
+
+  .header-media .links ul li a:hover {
+    padding-left: 30px;
+    color: var(--secondary-color);
+  }
+
+  .header-media .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .header-media .nav a{
+      font-size: 30pt;
+      margin-left: 16%;
+      font-weight: 800;
+      color: white;      
+      cursor: pointer;text-decoration: none;
+      border: 2px solid white;
+      border-radius: 15px 0px;
+      padding: 5px;
+
+  }
+
+  .header-media .nav a:hover{
+    color: var(--main-color);
+  }
+
+  @media (max-width:767px){
+    .header-media .nav a{
+      font-size: 18pt;
+      margin-left: 2%;
+      text-decoration: none;
+    }
+  }
+  /* end header section */
+
+  /* start anmi section */
+  @font-face {
+    font-family: Biko;
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
+  }
+ 
+  .anmi {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;    
+  }
+  .anmi video {
+    width: 100%;
+  }
+  svg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    height: 100%;
+  }
+  svg text {
+    font-family: Biko, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  svg rect {
+    fill: white;    
+  }
+  svg > rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+  }
+  
+  /* end anmi section */
+
+  /* start video section */
+  /* <!-- second slider -->  */
+.col-lg-4{  
+  margin: 0 auto;
+  padding-top: 30px; 
+  
+}
+
+
+.carousel {
+  padding: .3em .3em 0;
+  background: white;
+  text-align: center;
+  border-radius: 25px 0px; 
+}
+
+.carousel div {
+  position: relative;
+  margin-bottom: .3em;
+  padding-top: 56.25%;    
+}
+.carousel iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px 0px;
+}
+.carousel span {
+  display: inline-block;
+  word-spacing: 1em;  
+  overflow: auto;
+  white-space: nowrap;
+  word-wrap: normal;
+
+}
+.carousel a {
+  position: relative;
+  display: inline-block;
+  max-width: 120px;
+  width: 25%; 
+  border: 1px solid var(--main-color); 
+  border-radius: 25px 0px;
+  opacity: 1;  
+  text-decoration: none; 
+}
+.carousel a:visited,
+.carousel a:nth-of-type(1) {
+  border-color: #555;  
+  text-decoration: none;
+}
+.carousel a:hover { 
+  opacity: 1;
+  text-decoration: none;
+}
+.carousel a:not(:active):focus {
+  pointer-events: none;
+  text-decoration: none;
+}
+.carousel a::before {
+  content: "";
+  position: absolute;
+  top: 0em;
+  right: 0em;
+  bottom: 0em;
+  left: 0em;
+  background: rgba(0,0,1,.1);
+  transition: background 0s 9999999s;
+  border-radius: 25px 0px;
+  text-decoration: none;
+}
+.carousel a:nth-of-type(1)::before {
+  background: rgba(255,255,254,.7);
+  text-decoration: none;
+}
+.carousel span:active a::before {
+  background: rgba(0,0,0,0);
+  transition: background 0s;
+  text-decoration: none;
+}
+.carousel span:active a:active::before {
+  
+  transition: background 0s;
+  text-decoration: none;
+}
+.carousel img {
+  width: 100%;
+  vertical-align: middle; 
+  border-radius: 25px 0px;
+}
+
+  /* end video section */
+
+  /* start gallery section */
+  .mySlides {display: none;}
+
+ .mySlides img {
+   vertical-align: middle;
+   width: 100%;
+  
+   margin: 0 auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: var(--secondary-color);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* end gallery section */
